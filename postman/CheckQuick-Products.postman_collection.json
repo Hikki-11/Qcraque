@@ -1,0 +1,11 @@
+{
+  "info":{"name":"CheckQuick Product CRUD API","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "variable":[{"key":"base_url","value":"http://127.0.0.1:8000"},{"key":"product_id","value":""}],
+  "item":[
+    {"name":"Create Product","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"name\":\"Laptop\",\"description\":\"Test product\",\"sku\":\"LAP001\",\"price\":50000,\"status\":\"ACTIVE\"}"},"url":"{{base_url}}/products/"}},
+    {"name":"Get All Products","request":{"method":"GET","url":"{{base_url}}/products/"}},
+    {"name":"Get Product","request":{"method":"GET","url":"{{base_url}}/products/{{product_id}}"}},
+    {"name":"Update Product","request":{"method":"PUT","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"price\":55000}"},"url":"{{base_url}}/products/{{product_id}}"}},
+    {"name":"Delete Product","request":{"method":"DELETE","url":"{{base_url}}/products/{{product_id}}"}}
+  ]
+}

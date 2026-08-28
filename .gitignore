@@ -4,4 +4,4 @@ __pycache__/
 .venv/
 venv/
 .env
-git add .gitignore
+checkquick.db
